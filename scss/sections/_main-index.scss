@@ -57,3 +57,10 @@
         margin: 5rem;
     }
 }
+@media (max-width:767px) {
+    .main .main__carrusel-img img {
+        height: 50vh;
+        object-fit: contain;
+    }
+    
+}

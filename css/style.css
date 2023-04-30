@@ -28,9 +28,9 @@
       cursor: pointer;
       opacity: 1;
       filter: contrast(130%); }
-  .main .container #ads {
+  .main .main__cards-nuevos #ads, .main .main__cards-usados #ads {
     margin: 30px 0 30px 0; }
-  .main .container #ads .card-notify-badge {
+  .main .main__cards-nuevos #ads .card-notify-badge, .main .main__cards-usados #ads .card-notify-badge {
     position: absolute;
     left: -10px;
     top: -20px;
@@ -40,7 +40,7 @@
     color: #000;
     padding: 5px 10px;
     font-size: 14px; }
-  .main .container #ads .card-notify-year {
+  .main .main__cards-nuevos #ads .card-notify-year, .main .main__cards-usados #ads .card-notify-year {
     position: absolute;
     right: -10px;
     top: -20px;
@@ -52,23 +52,23 @@
     width: 50px;
     height: 50px;
     padding: 15px 0 0 0; }
-  .main .container #ads .card-detail-badge {
+  .main .main__cards-nuevos #ads .card-detail-badge, .main .main__cards-usados #ads .card-detail-badge {
     background: #f2d900;
     text-align: center;
     border-radius: 30px 30px 30px 30px;
     color: #000;
     padding: 5px 10px;
     font-size: 14px; }
-  .main .container #ads .card:hover {
+  .main .main__cards-nuevos #ads .card:hover, .main .main__cards-usados #ads .card:hover {
     background: #fff;
     box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
     border-radius: 4px;
     transition: all 0.3s ease; }
-  .main .container #ads .card-image-overlay {
+  .main .main__cards-nuevos #ads .card-image-overlay, .main .main__cards-usados #ads .card-image-overlay {
     font-size: 20px; }
-  .main .container #ads .card-image-overlay span {
+  .main .main__cards-nuevos #ads .card-image-overlay span, .main .main__cards-usados #ads .card-image-overlay span {
     display: inline-block; }
-  .main .container #ads .ad-btn {
+  .main .main__cards-nuevos #ads .ad-btn, .main .main__cards-usados #ads .ad-btn {
     text-transform: uppercase;
     width: 150px;
     height: 40px;
@@ -84,14 +84,14 @@
     overflow: hidden;
     position: relative;
     background-color: #e6de08; }
-  .main .container #ads .ad-btn:hover {
+  .main .main__cards-nuevos #ads .ad-btn:hover, .main .main__cards-usados #ads .ad-btn:hover {
     background-color: #e6de08;
     color: #1e1717;
     border: 2px solid #e6de08;
     background: transparent;
     transition: all 0.3s ease;
     box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15); }
-  .main .container #ads .ad-title h5 {
+  .main .main__cards-nuevos #ads .ad-title h5, .main .main__cards-usados #ads .ad-title h5 {
     text-transform: uppercase;
     font-size: 18px; }
 
@@ -141,6 +141,47 @@
     grid-area: area-4-img;
     background-image: url("https://i1.wp.com/generamas.com/wp-content/uploads/2019/05/56c9a22f8d466d6ab2c07e2e081d-1449321.jpgd_.jpeg?fit=1024%2C684&ssl=1"); }
 
+@media (max-width: 767px) {
+  .grid {
+    margin: 1px;
+    grid-gap: 1rem 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 0.8fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "area-1-img" "area-1" "area-2-img" "area-2" "area-3-img" "area-3" "area-4-img" "area-4"; }
+  .grid__area-1 {
+    grid-area: area-1; }
+  .grid__area-1-img {
+    grid-area: area-1-img;
+    background-image: url("https://andigital.com.ar/media/k2/items/cache/f4467b92df2c973ad438e25fddf5d764_XL.jpg"); }
+  .grid__area-2 {
+    grid-area: area-2; }
+  .grid__area-2-img {
+    grid-area: area-2-img;
+    background-image: url("https://d31dn7nfpuwjnm.cloudfront.net/images/valoraciones/0034/6063/Mejores_prestamos_prendarios_para_autos_2019.jpg?1563825869"); }
+  .grid__area-3 {
+    grid-area: area-3; }
+  .grid__area-3-img {
+    grid-area: area-3-img;
+    background-image: url("https://static.wixstatic.com/media/648ad0_5e4a356604d5479abf383171c954d628~mv2.jpg/v1/fill/w_498,h_332,al_c,q_85,usm_0.66_1.00_0.01/648ad0_5e4a356604d5479abf383171c954d628~mv2.jpg"); }
+  .grid__area-4 {
+    grid-area: area-4; }
+  .grid__area-4-img {
+    grid-area: area-4-img;
+    background-image: url("https://i1.wp.com/generamas.com/wp-content/uploads/2019/05/56c9a22f8d466d6ab2c07e2e081d-1449321.jpgd_.jpeg?fit=1024%2C684&ssl=1"); }
+  .grid__img {
+    background-size: contain; }
+  .grid__text {
+    padding: 2rem;
+    font-size: small;
+    color: #b19292fa; } }
+
+@media (max-width: 1024px) {
+  .grid__text {
+    padding: 2rem;
+    font-size: medium; } }
+
 .main .main__carrusel {
   width: 85%;
   margin: auto; }
@@ -180,6 +221,11 @@
   text-align: center;
   margin: 5rem; }
 
+@media (max-width: 767px) {
+  .main .main__carrusel-img img {
+    height: 50vh;
+    object-fit: contain; } }
+
 .main .main__carrusel-nuevos {
   display: flex;
   width: 100%;
@@ -209,6 +255,14 @@
 .main .card-image img {
   height: 220px;
   width: 100%; }
+
+@media (max-width: 767px) {
+  .main__carrusel-nuevos {
+    height: 200px; }
+  .main__carrusel-nuevos img:hover {
+    width: 120px; }
+  .cards-nuevos {
+    margin: 20px 0; } }
 
 .main .main__carrusel-postventa {
   width: 95%;
@@ -248,7 +302,20 @@
   font-family: 'Permanent Marker', cursive, sans-serif;
   font-size: xx-large; }
 
+@media (max-width: 767px) {
+  .main__cards-individual {
+    flex-wrap: wrap; }
+    .main__cards-individual .main__text-card {
+      padding: 1rem;
+      width: 100%; }
+    .main__cards-individual .main__cards-img {
+      width: 100%; } }
+
 .main .main__h4-usados {
   text-align: center;
-  font-family: 'Permanent Marker', cursive, sans-serif;
+  font-family: "Permanent Marker", cursive, sans-serif;
   font-size: xx-large; }
+
+@media (max-width: 767px) {
+  .cards-usados {
+    margin: 20px 0; } }
