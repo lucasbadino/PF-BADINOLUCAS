@@ -1,0 +1,54 @@
+.main {
+    .main__carrusel-postventa {
+        width: 95%;
+        margin: auto;
+
+        .text {
+            font-size: large;
+            color: #040000b1;
+            font-weight: bold;
+
+            h5 {
+                font-size: xx-large;
+            }
+        }
+    }
+
+    .main__cards-general {
+        margin: 2rem;
+
+        .main__cards-individual {
+            display: flex;
+            margin: 2rem 0;
+            justify-content: space-around;
+            text-align: center;
+            align-content: center;
+            background-color: hsla(0, 1%, 74%, 0.322);
+            align-items: center;
+            flex-wrap: wrap;
+
+            .main__text-card {
+                display: block;
+                padding: 2rem;
+                width: 50%;
+            }
+
+            .main__cards-img {
+                width: 50%;
+                overflow: hidden;
+                object-position: center;
+            }
+        }
+
+    }
+
+    .main__form-postventa {
+        margin: 2rem;
+    }
+
+    .main__h4-postventa {
+        text-align: center;
+        font-family: 'Permanent Marker', cursive, sans-serif;
+        font-size: xx-large;
+    }
+}
