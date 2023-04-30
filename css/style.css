@@ -220,6 +220,8 @@
   justify-content: space-around;
   text-align: center;
   margin: 5rem; }
+  .main .main__opiniones .card {
+    width: 18rem; }
 
 @media (max-width: 767px) {
   .main .main__carrusel-img img {

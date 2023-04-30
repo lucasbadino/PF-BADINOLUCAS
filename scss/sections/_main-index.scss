@@ -55,6 +55,9 @@
         justify-content: space-around;
         text-align: center;
         margin: 5rem;
+        .card{
+            width: 18rem;
+        }
     }
 }
 @media (max-width:767px) {
