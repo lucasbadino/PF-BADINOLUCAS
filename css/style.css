@@ -304,14 +304,16 @@
   font-family: 'Permanent Marker', cursive, sans-serif;
   font-size: xx-large; }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .main__cards-individual {
     flex-wrap: wrap; }
-    .main__cards-individual .main__text-card {
-      padding: 1rem;
-      width: 100%; }
-    .main__cards-individual .main__cards-img {
-      width: 100%; } }
+  .main__text-card {
+    padding: 1rem;
+    width: 100%;
+    min-width: 80vw; }
+  .main__cards-img {
+    width: 100%;
+    min-width: 80vw; } }
 
 .main .main__h4-usados {
   text-align: center;

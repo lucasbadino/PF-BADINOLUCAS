@@ -53,19 +53,21 @@
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
     .main__cards-individual {
         flex-wrap: wrap;
-
-
-
-        .main__text-card {
-            padding: 1rem;
-            width: 100%;
-        }
-
-        .main__cards-img {
-            width: 100%;
-        }
+        
     }
+
+    .main__text-card {
+        padding: 1rem;
+        width: 100%;
+        min-width: 80vw;        
+    }
+
+    .main__cards-img {
+        width: 100%;
+        min-width: 80vw
+    }
+
 }
