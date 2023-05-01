@@ -183,6 +183,9 @@
     padding: 2rem;
     font-size: medium; } }
 
+.main .main__titulo-financiacion {
+  padding: 2rem; }
+
 .main .main__carrusel {
   width: 85%;
   margin: auto; }
@@ -286,8 +289,7 @@
     text-align: center;
     align-content: center;
     background-color: rgba(189, 188, 188, 0.322);
-    align-items: center;
-    flex-wrap: wrap; }
+    align-items: center; }
     .main .main__cards-general .main__cards-individual .main__text-card {
       display: block;
       padding: 2rem;

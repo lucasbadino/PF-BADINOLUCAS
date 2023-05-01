@@ -1,5 +1,5 @@
 .main {
-    min-height: 70vh;
+    @include alto-vh(70vh);
     margin: 15px;
     font-family: $general;
 
