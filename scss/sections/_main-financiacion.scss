@@ -1,4 +1,7 @@
 .main {
+    .main__titulo-financiacion{
+        padding: 3rem 12rem;
+    }
     .grid {
         margin: 1px;
         grid-gap: 1rem 0;
@@ -20,7 +23,7 @@
         .grid__text {
             padding: 2rem 7rem;
             text-align: center;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family: $franklin;
             font-size: larger;
             color: #8b3737c5;
             background-color: #bac9a4a9;

@@ -45,7 +45,7 @@
 
     .main__titulo {
         text-align: center;
-        font-family: 'Lora', serif;
+        font-family: $lora;
         margin-top: 25px;
     }
 
@@ -55,15 +55,17 @@
         justify-content: space-around;
         text-align: center;
         margin: 5rem;
-        .card{
+
+        .card {
             width: 18rem;
         }
     }
 }
+
 @media (max-width:767px) {
     .main .main__carrusel-img img {
         height: 50vh;
         object-fit: contain;
     }
-    
+
 }

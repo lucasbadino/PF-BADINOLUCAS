@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 * {
   padding: 0;
@@ -10,7 +8,7 @@
 .header {
   min-height: 9vh; }
   .header .header__logo {
-    width: 120px; }
+    height: 70px; }
 
 .main {
   min-height: 70vh;
@@ -102,6 +100,9 @@
   width: 90%;
   margin: auto; }
 
+.main .main__titulo-financiacion {
+  padding: 3rem 12rem; }
+
 .main .grid {
   margin: 1px;
   grid-gap: 1rem 0;
@@ -116,7 +117,7 @@
   .main .grid .grid__text {
     padding: 2rem 7rem;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: larger;
     color: #8b3737c5;
     background-color: #bac9a4a9; }
@@ -211,7 +212,7 @@
 
 .main .main__titulo {
   text-align: center;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   margin-top: 25px; }
 
 .main .main__opiniones {
@@ -261,8 +262,8 @@
 @media (max-width: 767px) {
   .main__carrusel-nuevos {
     height: 200px; }
-  .main__carrusel-nuevos img:hover {
-    width: 120px; }
+    .main__carrusel-nuevos img:hover {
+      width: 200px; }
   .cards-nuevos {
     margin: 20px 0; } }
 
@@ -301,19 +302,19 @@
 
 .main .main__h4-postventa {
   text-align: center;
-  font-family: 'Permanent Marker', cursive, sans-serif;
+  font-family: "Permanent Marker", cursive, sans-serif;
   font-size: xx-large; }
 
 @media (max-width: 768px) {
-  .main__cards-individual {
+  .main .main__cards-individual {
     flex-wrap: wrap; }
-  .main__text-card {
-    padding: 1rem;
-    width: 100%;
-    min-width: 80vw; }
-  .main__cards-img {
-    width: 100%;
-    min-width: 80vw; } }
+    .main .main__cards-individual .main__text-card {
+      padding: 1rem;
+      width: 100%;
+      min-width: 77vw; }
+    .main .main__cards-individual .main__cards-img {
+      width: 100%;
+      min-width: 77vw; } }
 
 .main .main__h4-usados {
   text-align: center;

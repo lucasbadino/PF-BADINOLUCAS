@@ -39,18 +39,18 @@
         width: 100%;
     }
 }
+
 @media (max-width: 767px) {
     .main__carrusel-nuevos {
         height: 200px;
-    }
-
-    .main__carrusel-nuevos img:hover {
-        width: 120px;
+        img:hover {
+            width: 200px;
+        }
     }
 
     .cards-nuevos {
         margin: 20px 0;
     }
 
-    
+
 }
